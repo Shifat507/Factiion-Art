@@ -16,13 +16,21 @@
     <link rel="stylesheet" href="women-shoes.html">
     <link rel="stylesheet" href="women-watch.html">
     <link rel="stylesheet" href="heeadphones.html">
+    <style>
+        #text-center{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 
 </head>
 
 <body>
     <!-- Navbar start-->
     <section>
-        <nav class="navbar navbar-expand-lg bg-dark ">
+        <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <h1><strong class="text-light pe-5">Faction<span class="text-danger">A</span>rt</strong></h1>
@@ -88,31 +96,37 @@
 
     <!-- profile -->
     <main>
-        <div class="border border-3 border-info w-25" style="text-align: center;">
-            <div>
-                <img class="w-75" src="images/logo/user-profile.jpg" alt="">
-            </div>
-            <div>
-                <div>
-                    <h4>Name: <input type="text" placeholder="Name"></h4>
-                    <h4>Email: <input type="email" name="" id="" placeholder="email.@"></h4>
-                    <h4>Address: <input type="text" placeholder=""></h4>
-                    <label for="gender">
-                        <h4>Gender:</h4>
-                    </label>
-                    <select class="px-2"  name="gender">
-                        <option value="none" selected>Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">other</option>
-                    </select>
+        <form action="">
+            <section class="d-flex justify-content-center my-5">
+                <div class="border border-3 border-secondary w-25 px-4">
+                    <div class="text-center">
+                        <img class="w-75" src="images/logo/user-profile.jpg" alt="">
+                    </div>
+                    <div>
+                        <div action="content.php" method="post">
+                            <p><b class="pe-2">Name:  </b><input type="text" placeholder="Name" name="fullName"></p>
+                            <p><b class="pe-2">Email:  </b><input type="email" name="" id="" placeholder="email.@" name="email" name="address"></p>
+                            <p><b class="pe-2">Address:</b><input type="text" placeholder=""></p>
+                            <label for="gender">
+                                <p><b class="pe-2">Gender:</b></p> 
+                            </label>
+                            <select class="px-2"  name="gender">
+                                <option value="none" selected>Select</option>
+                                <option value="male" name="gender" value="m">Male</option>
+                                <option value="female" name="gender" value="f">Female</option>
+                                <option value="other" name="gender" value="o">other</option>
+                            </select>
+                        </div>
+                        <div class="text-center py-3">
+                            <button type="button" class="btn btn-primary px-4">Submit</button>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div>
-                    <button type="button" class="btn btn-primary">Submit</button>
-                </div>
-            </div>
-            
-        </div>
+            </section>
+        </form>
+        
+        
     </main>
 
 </body>
