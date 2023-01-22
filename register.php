@@ -6,7 +6,7 @@
 
 	$name = $_POST['fullName']; // We have to give excetly the same name in POST array as we give in our profile.
 	$email = $_POST['email'];
-	$password = $_POST['password'];
+	$pass = $_POST['password'];
 	$address = $_POST['address'];
 	$gender = $_POST['gender'];
 
@@ -29,12 +29,12 @@
 	}else {
 		// insert data to your table.
 		// Query .
-		$sql = "insert into `user_info`(`name`,`email`,`address`,`password`,`gender`) values('$name','$email','$address','$password','$gender')";
+		$sql = "insert into `user_info`(`name`,`email`,`address`,`password`,`gender`) values('$name','$email','$address','$pass','$gender')";
 		// run Query.
 		$result = mysqli_query($connect,$sql);
 	}
 	// if you want go to any location then .
 
-	header("location:profile.html");
+	header("location:reg.html");
 
 ?>
