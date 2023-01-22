@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Log in page</title>
+    <link rel="shortcut icon" href="images/logo/title-logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/838a2fecb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="mens-jacket.html">
+    <link rel="stylesheet" href="mens-shoes.html">
+    <link rel="stylesheet" href="mens-watch.html">
+    <link rel="stylesheet" href="women-shoes.html">
+    <link rel="stylesheet" href="women-watch.html">
+    <link rel="stylesheet" href="heeadphones.html">
+    <style>
+        #text-center{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar start-->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <h1><strong class="text-light pe-5">Faction<span class="text-danger">A</span>rt</strong></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page"
+                                href="heeadphones.html">Headphone</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Watch
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="mens-watch.html">Mens Watch</a></li>
+                                <li><a class="dropdown-item" href="women-watch.html">Womens Watch</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shoes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="mens-shoes.html">Mens Shoes</a></li>
+                                <li><a class="dropdown-item" href="women-shoes.html">Womens Shoes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Jacket
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="mens-jacket.html">Mens Jacket</a></li>
+                                <li><a class="dropdown-item" href="women-jacket.html">Womens Jacket</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div>
+                        <a href=""><i class="fa-solid fa-user text-light ps-5 fs-4"></i></a>
+                        <a href=""><i class="fa-solid fa-cart-shopping text-light fs-4 ps-1 pe-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Navber end -->
+
+    <!-- profile -->
+    <main>
+        <!-- action="register.php" so that we access our input data in register.php file -->
+        <!-- there are two types of method to access data GET and POST method POST is more secure so we are gonna use it -->
+        <form action="register.php" method="post">
+            <section class="d-flex justify-content-center my-5">
+                <div class="border border-3 border-secondary w-25 px-4">
+                    <div class="text-center">
+                        <img class="w-75" src="images/logo/user-profile.jpg" alt="">
+                    </div>
+                    <div>
+                        <!-- I don't Know Why you are useing action and method here!!!! So I Cut It -->
+                        <div>
+                            <p><b class="pe-2">Name:  </b><input type="text" placeholder="Name" name="fullName"></p>
+                            <p><b class="pe-2">Email:  </b><input type="email" placeholder="email.@" name="email"></p>
+                            <p><b class="pe-2">Address:</b><input type="text" name="address"></p>
+                            <label for="gender">
+                                <p><b class="pe-2">Gender:</b></p> 
+                            </label>
+                            <select class="px-2" name="gender">
+                                <option value="none" selected>Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">other</option>
+                            </select>
+                        </div>
+                        <div class="text-center py-3">
+                            <!-- <button type="button" class="btn btn-primary px-4">Submit</button> -->
+                            <button type="submit" class="btn btn-primary px-4">Submit</button>
+                            <!-- button type must be submit in order to excess data -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </form>
+        
+        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
