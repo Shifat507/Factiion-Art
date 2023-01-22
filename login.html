@@ -98,8 +98,9 @@
     <main>
         <!-- action="register.php" so that we access our input data in register.php file -->
         <!-- there are two types of method to access data GET and POST method POST is more secure so we are gonna use it -->
+        <H5 class="d-flex justify-content-center pt-4">login Page</H5>
         <form action="register.php" method="post">
-            <section class="d-flex justify-content-center my-5">
+            <section class="d-flex justify-content-center my-2">
                 <div class="border border-3 border-secondary w-25 px-4">
                     <div class="text-center">
                         <img class="w-75" src="images/logo/user-profile.jpg" alt="">
@@ -107,18 +108,9 @@
                     <div>
                         <!-- I don't Know Why you are useing action and method here!!!! So I Cut It -->
                         <div>
-                            <p><b class="pe-2">Name:  </b><input type="text" placeholder="Name" name="fullName"></p>
-                            <p><b class="pe-2">Email:  </b><input type="email" placeholder="email.@" name="email"></p>
-                            <p><b class="pe-2">Address:</b><input type="text" name="address"></p>
-                            <label for="gender">
-                                <p><b class="pe-2">Gender:</b></p> 
-                            </label>
-                            <select class="px-2" name="gender">
-                                <option value="none" selected>Select</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="other">other</option>
-                            </select>
+                            <p><b class="pe-4">Name:  </b><input type="text" placeholder="User Name" name="fullName"></p>
+                            <p><b class="pe-4">Email:  </b><input type="email" placeholder="email.@" name="email"></p>
+                            <p><b class="">Password:  </b><input type="password" placeholder="Password" name="password"></p>
                         </div>
                         <div class="text-center py-3">
                             <!-- <button type="button" class="btn btn-primary px-4">Submit</button> -->

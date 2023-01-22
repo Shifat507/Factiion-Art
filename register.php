@@ -6,6 +6,7 @@
 
 	$name = $_POST['fullName']; // We have to give excetly the same name in POST array as we give in our profile.
 	$email = $_POST['email'];
+	$password = $_POST['password'];
 	$address = $_POST['address'];
 	$gender = $_POST['gender'];
 
@@ -15,7 +16,7 @@
 	$host_name = 'localhost'; // It Will Be same for you.
 	$user_name = 'root'; // It Will Be same too.
 	$password = '';// It will be same too.
-	$database = 'wwe';// This might be different for you, you should name it as database.
+	$database = 'registration';// This might be different for you, you should name it as database.
 
 	// Now connection.
 
@@ -28,7 +29,7 @@
 	}else {
 		// insert data to your table.
 		// Query .
-		$sql = "insert into `user`(`name`,`email`,`address`,`gender`) values('$name','$email','$address','$gender')";
+		$sql = "insert into `user_info`(`name`,`email`,`address`,`password`,`gender`) values('$name','$email','$address','$password','$gender')";
 		// run Query.
 		$result = mysqli_query($connect,$sql);
 	}
